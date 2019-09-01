@@ -20,6 +20,7 @@ class UserdetailViewController: UIViewController {
     
     // MARK: - Outlets
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var nameLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,31 +34,30 @@ private extension UserdetailViewController {
     func setupUI() {
         tableView.delegate = self
         tableView.dataSource = self
-        loadAlbums()
-        loadPosts()
+        loadDatas()
+        loadUserInformation()
     }
     
-    func loadAlbums() {
-        viewModel.albums()
-            .subscribe(onSuccess: { [weak self] albums in
-                guard let strongSelf = self else { return }
-                strongSelf.albums = albums
-                strongSelf.tableView.reloadData()
-            })
+    func loadDatas() {
+        Single.zip(viewModel.albums(), viewModel.posts()) {
+            return (albums: $0, posts: $1)
+        }
+        .subscribe(onSuccess: { [weak self] datas in
+            
+            guard let strongSelf = self else { return }
+            strongSelf.albums = datas.albums
+            strongSelf.posts = datas.posts
+            strongSelf.tableView.reloadData()
+        })
         .disposed(by: disposeBag)
     }
     
-    func loadPosts() {
-        viewModel.posts()
-            .subscribe(onSuccess: { [weak self] posts in
-                guard let strongSelf = self else { return }
-                strongSelf.posts = posts
-                strongSelf.tableView.reloadData()
-            })
-            .disposed(by: disposeBag)
+    func loadUserInformation() {
+        nameLabel.text = "\(viewModel.user.name) (\(viewModel.user.username))"
     }
 }
 
+// MARK: - TableView delegate & datasource
 extension UserdetailViewController: UITableViewDelegate, UITableViewDataSource {
     
     func numberOfSections(in tableView: UITableView) -> Int {
@@ -104,6 +104,10 @@ extension UserdetailViewController: UITableViewDelegate, UITableViewDataSource {
         }
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
     }
     
     

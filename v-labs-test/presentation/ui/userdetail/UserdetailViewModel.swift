@@ -11,7 +11,7 @@ import RxSwift
 class UserdetailViewModel {
     
     private let contentRepository: ContentRepository
-    private let user: User
+    let user: User
     
     init(contentRepository: ContentRepository, user: User) {
         self.contentRepository = contentRepository

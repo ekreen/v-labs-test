@@ -19,7 +19,7 @@ class UserlistViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        loadUsers()
+        setupUI()
     }
 
     // MARK: - Table view data source
@@ -46,6 +46,11 @@ class UserlistViewController: UITableViewController {
 
 // MARK: - private functions
 private extension UserlistViewController {
+    
+    func setupUI() {
+        title = "Users"
+        loadUsers()
+    }
     
     func loadUsers() {
         viewModel.usersList()
