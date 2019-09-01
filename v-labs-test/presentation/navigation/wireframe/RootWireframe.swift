@@ -12,16 +12,21 @@ class RootWireframe {
     private var window: UIWindow
     private var router: Router
     private var controllerFactory: ControllerFactory
+    private var contentRepository: ContentRepository
+    private var apiManager: ApiManager
     
     init(window: UIWindow) {
         self.window = window
         self.router = RouterImpl()
         self.controllerFactory = ControllerFactoryImpl()
+        self.apiManager = ApiManagerImpl()
+        self.contentRepository = ContentRepository(apiManager: apiManager)
     }
 
     func start() {
         let controller = controllerFactory.makeUserlistViewController() as! UserlistViewController
         controller.wireframe = self
+        controller.viewModel = UserlistViewModel(contentRepository: contentRepository)
         router.setRootController(controller: controller)
         window.rootViewController = router.rootController
     }

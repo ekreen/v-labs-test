@@ -24,7 +24,6 @@
 		A2979A41231C5AFC003BC1B8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A40231C5AFC003BC1B8 /* Post.swift */; };
 		A2979A43231C5C60003BC1B8 /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A42231C5C60003BC1B8 /* ContentRepository.swift */; };
 		A2979A47231C5DB2003BC1B8 /* Userlist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2979A46231C5DB2003BC1B8 /* Userlist.storyboard */; };
-		A2979A49231C5DCA003BC1B8 /* UserlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A48231C5DCA003BC1B8 /* UserlistViewController.swift */; };
 		A2979A4C231C5E04003BC1B8 /* Userdetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2979A4B231C5E04003BC1B8 /* Userdetail.storyboard */; };
 		A2979A4E231C5E18003BC1B8 /* UserdetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A4D231C5E18003BC1B8 /* UserdetailViewController.swift */; };
 		A2979A51231C5E65003BC1B8 /* Createpost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2979A50231C5E65003BC1B8 /* Createpost.storyboard */; };
@@ -34,6 +33,8 @@
 		A2979A5C231C60F1003BC1B8 /* ControllerFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A5B231C60F1003BC1B8 /* ControllerFactoryImpl.swift */; };
 		A2979A5F231C61E3003BC1B8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A5E231C61E3003BC1B8 /* Router.swift */; };
 		A2979A61231C6273003BC1B8 /* RouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A60231C6273003BC1B8 /* RouterImpl.swift */; };
+		A2979A63231C65F7003BC1B8 /* UserlistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A62231C65F7003BC1B8 /* UserlistViewModel.swift */; };
+		A2979A65231C684E003BC1B8 /* UserlistViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A64231C684E003BC1B8 /* UserlistViewController.swift */; };
 		B7008D274B345274D53214A9 /* Pods_v_labs_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7BB14E20C9559EFC6A0D0E /* Pods_v_labs_testTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -72,7 +73,6 @@
 		A2979A40231C5AFC003BC1B8 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		A2979A42231C5C60003BC1B8 /* ContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRepository.swift; sourceTree = "<group>"; };
 		A2979A46231C5DB2003BC1B8 /* Userlist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Userlist.storyboard; sourceTree = "<group>"; };
-		A2979A48231C5DCA003BC1B8 /* UserlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserlistViewController.swift; sourceTree = "<group>"; };
 		A2979A4B231C5E04003BC1B8 /* Userdetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Userdetail.storyboard; sourceTree = "<group>"; };
 		A2979A4D231C5E18003BC1B8 /* UserdetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserdetailViewController.swift; sourceTree = "<group>"; };
 		A2979A50231C5E65003BC1B8 /* Createpost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Createpost.storyboard; sourceTree = "<group>"; };
@@ -82,6 +82,8 @@
 		A2979A5B231C60F1003BC1B8 /* ControllerFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactoryImpl.swift; sourceTree = "<group>"; };
 		A2979A5E231C61E3003BC1B8 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
 		A2979A60231C6273003BC1B8 /* RouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterImpl.swift; sourceTree = "<group>"; };
+		A2979A62231C65F7003BC1B8 /* UserlistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserlistViewModel.swift; sourceTree = "<group>"; };
+		A2979A64231C684E003BC1B8 /* UserlistViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserlistViewController.swift; sourceTree = "<group>"; };
 		CC41BE3F869E10E267B4EAB0 /* Pods-v-labs-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-v-labs-test.release.xcconfig"; path = "Target Support Files/Pods-v-labs-test/Pods-v-labs-test.release.xcconfig"; sourceTree = "<group>"; };
 		CD7BB14E20C9559EFC6A0D0E /* Pods_v_labs_testTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_v_labs_testTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -249,7 +251,8 @@
 			isa = PBXGroup;
 			children = (
 				A2979A46231C5DB2003BC1B8 /* Userlist.storyboard */,
-				A2979A48231C5DCA003BC1B8 /* UserlistViewController.swift */,
+				A2979A62231C65F7003BC1B8 /* UserlistViewModel.swift */,
+				A2979A64231C684E003BC1B8 /* UserlistViewController.swift */,
 			);
 			path = userlist;
 			sourceTree = "<group>";
@@ -519,7 +522,9 @@
 			files = (
 				A2979A5A231C5FF8003BC1B8 /* ControllerFactory.swift in Sources */,
 				A2979A2F231C0098003BC1B8 /* ApiManager.swift in Sources */,
+				A2979A65231C684E003BC1B8 /* UserlistViewController.swift in Sources */,
 				A2979A39231C06EF003BC1B8 /* Adress.swift in Sources */,
+				A2979A63231C65F7003BC1B8 /* UserlistViewModel.swift in Sources */,
 				A2979A57231C5F8F003BC1B8 /* RootWireframe.swift in Sources */,
 				A2979A53231C5E76003BC1B8 /* CreatepostViewController.swift in Sources */,
 				A2979A41231C5AFC003BC1B8 /* Post.swift in Sources */,
@@ -532,7 +537,6 @@
 				A2979A5F231C61E3003BC1B8 /* Router.swift in Sources */,
 				A2979A43231C5C60003BC1B8 /* ContentRepository.swift in Sources */,
 				A2979A31231C00B4003BC1B8 /* ApiManagerImpl.swift in Sources */,
-				A2979A49231C5DCA003BC1B8 /* UserlistViewController.swift in Sources */,
 				A2979A28231BFFAC003BC1B8 /* R.generated.swift in Sources */,
 				A2979A3F231C573D003BC1B8 /* Album.swift in Sources */,
 				A2979A37231C05D3003BC1B8 /* User.swift in Sources */,
