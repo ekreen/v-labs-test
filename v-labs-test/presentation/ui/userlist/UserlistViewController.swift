@@ -17,4 +17,8 @@ class UserlistViewController: UIViewController {
 
         // Do any additional setup after loading the view.
     }
+    
+    @IBAction func showUserDetail(_ sender: UIButton) {
+        wireframe.showDetail(for: 1)
+    }
 }
