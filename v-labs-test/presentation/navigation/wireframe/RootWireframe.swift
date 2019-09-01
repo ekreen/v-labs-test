@@ -31,9 +31,10 @@ class RootWireframe {
         window.rootViewController = router.rootController
     }
     
-    func showDetail(for userId: Int) {
-        let controller = controllerFactory.makeUserdetailViewController(for: userId) as! UserdetailViewController
+    func showDetail(for user: User) {
+        let controller = controllerFactory.makeUserdetailViewController() as! UserdetailViewController
         controller.wireframe = self
+        controller.viewModel = UserdetailViewModel(contentRepository: contentRepository, user: user)
         router.pushViewController(controller: controller)
     }
     

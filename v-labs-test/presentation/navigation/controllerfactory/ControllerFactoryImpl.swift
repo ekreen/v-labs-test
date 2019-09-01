@@ -13,7 +13,7 @@ class ControllerFactoryImpl: ControllerFactory {
         return R.storyboard.userlist().instantiateViewController(withIdentifier: R.storyboard.userlist.userlistViewController.identifier)
     }
     
-    func makeUserdetailViewController(for userId: Int) -> UIViewController {
+    func makeUserdetailViewController() -> UIViewController {
         return R.storyboard.userdetail().instantiateViewController(withIdentifier: R.storyboard.userdetail.userdetailViewController.identifier)
     }
     

@@ -10,6 +10,6 @@ import UIKit
 
 protocol ControllerFactory {
     func makeUserlistViewController() -> UIViewController
-    func makeUserdetailViewController(for userId: Int) -> UIViewController
+    func makeUserdetailViewController() -> UIViewController
     func makeCreatepostViewController() -> UIViewController
 }
