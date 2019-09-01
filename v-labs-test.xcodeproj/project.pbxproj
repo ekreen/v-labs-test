@@ -24,6 +24,7 @@
 		A2979A3D231C07A7003BC1B8 /* Company.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A3C231C07A7003BC1B8 /* Company.swift */; };
 		A2979A3F231C573D003BC1B8 /* Album.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A3E231C573D003BC1B8 /* Album.swift */; };
 		A2979A41231C5AFC003BC1B8 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A40231C5AFC003BC1B8 /* Post.swift */; };
+		A2979A43231C5C60003BC1B8 /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A42231C5C60003BC1B8 /* ContentRepository.swift */; };
 		B7008D274B345274D53214A9 /* Pods_v_labs_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7BB14E20C9559EFC6A0D0E /* Pods_v_labs_testTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -62,6 +63,7 @@
 		A2979A3C231C07A7003BC1B8 /* Company.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Company.swift; sourceTree = "<group>"; };
 		A2979A3E231C573D003BC1B8 /* Album.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Album.swift; sourceTree = "<group>"; };
 		A2979A40231C5AFC003BC1B8 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		A2979A42231C5C60003BC1B8 /* ContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRepository.swift; sourceTree = "<group>"; };
 		CC41BE3F869E10E267B4EAB0 /* Pods-v-labs-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-v-labs-test.release.xcconfig"; path = "Target Support Files/Pods-v-labs-test/Pods-v-labs-test.release.xcconfig"; sourceTree = "<group>"; };
 		CD7BB14E20C9559EFC6A0D0E /* Pods_v_labs_testTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_v_labs_testTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -171,6 +173,7 @@
 		A2979A2B231C0069003BC1B8 /* repository */ = {
 			isa = PBXGroup;
 			children = (
+				A2979A42231C5C60003BC1B8 /* ContentRepository.swift */,
 			);
 			path = repository;
 			sourceTree = "<group>";
@@ -428,6 +431,7 @@
 				A2979A3D231C07A7003BC1B8 /* Company.swift in Sources */,
 				A2979A34231C01F1003BC1B8 /* ApiService.swift in Sources */,
 				A2979A07231BF8EE003BC1B8 /* AppDelegate.swift in Sources */,
+				A2979A43231C5C60003BC1B8 /* ContentRepository.swift in Sources */,
 				A2979A31231C00B4003BC1B8 /* ApiManagerImpl.swift in Sources */,
 				A2979A28231BFFAC003BC1B8 /* R.generated.swift in Sources */,
 				A2979A3F231C573D003BC1B8 /* Album.swift in Sources */,
