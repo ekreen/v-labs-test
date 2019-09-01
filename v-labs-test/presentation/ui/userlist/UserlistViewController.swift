@@ -9,6 +9,8 @@
 import UIKit
 
 class UserlistViewController: UIViewController {
+    
+    var wireframe: RootWireframe!
 
     override func viewDidLoad() {
         super.viewDidLoad()

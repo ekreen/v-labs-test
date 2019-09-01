@@ -31,6 +31,11 @@
 		A2979A4E231C5E18003BC1B8 /* UserdetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A4D231C5E18003BC1B8 /* UserdetailViewController.swift */; };
 		A2979A51231C5E65003BC1B8 /* Createpost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2979A50231C5E65003BC1B8 /* Createpost.storyboard */; };
 		A2979A53231C5E76003BC1B8 /* CreatepostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A52231C5E76003BC1B8 /* CreatepostViewController.swift */; };
+		A2979A57231C5F8F003BC1B8 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A56231C5F8F003BC1B8 /* RootWireframe.swift */; };
+		A2979A5A231C5FF8003BC1B8 /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A59231C5FF8003BC1B8 /* ControllerFactory.swift */; };
+		A2979A5C231C60F1003BC1B8 /* ControllerFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A5B231C60F1003BC1B8 /* ControllerFactoryImpl.swift */; };
+		A2979A5F231C61E3003BC1B8 /* Router.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A5E231C61E3003BC1B8 /* Router.swift */; };
+		A2979A61231C6273003BC1B8 /* RouterImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A60231C6273003BC1B8 /* RouterImpl.swift */; };
 		B7008D274B345274D53214A9 /* Pods_v_labs_testTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD7BB14E20C9559EFC6A0D0E /* Pods_v_labs_testTests.framework */; };
 /* End PBXBuildFile section */
 
@@ -76,6 +81,11 @@
 		A2979A4D231C5E18003BC1B8 /* UserdetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserdetailViewController.swift; sourceTree = "<group>"; };
 		A2979A50231C5E65003BC1B8 /* Createpost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Createpost.storyboard; sourceTree = "<group>"; };
 		A2979A52231C5E76003BC1B8 /* CreatepostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatepostViewController.swift; sourceTree = "<group>"; };
+		A2979A56231C5F8F003BC1B8 /* RootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
+		A2979A59231C5FF8003BC1B8 /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
+		A2979A5B231C60F1003BC1B8 /* ControllerFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactoryImpl.swift; sourceTree = "<group>"; };
+		A2979A5E231C61E3003BC1B8 /* Router.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Router.swift; sourceTree = "<group>"; };
+		A2979A60231C6273003BC1B8 /* RouterImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RouterImpl.swift; sourceTree = "<group>"; };
 		CC41BE3F869E10E267B4EAB0 /* Pods-v-labs-test.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-v-labs-test.release.xcconfig"; path = "Target Support Files/Pods-v-labs-test/Pods-v-labs-test.release.xcconfig"; sourceTree = "<group>"; };
 		CD7BB14E20C9559EFC6A0D0E /* Pods_v_labs_testTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_v_labs_testTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -178,6 +188,7 @@
 		A2979A2A231C0063003BC1B8 /* presentation */ = {
 			isa = PBXGroup;
 			children = (
+				A2979A54231C5F6F003BC1B8 /* navigation */,
 				A2979A44231C5D74003BC1B8 /* ui */,
 			);
 			path = presentation;
@@ -265,6 +276,42 @@
 				A2979A52231C5E76003BC1B8 /* CreatepostViewController.swift */,
 			);
 			path = createpost;
+			sourceTree = "<group>";
+		};
+		A2979A54231C5F6F003BC1B8 /* navigation */ = {
+			isa = PBXGroup;
+			children = (
+				A2979A5D231C61DA003BC1B8 /* router */,
+				A2979A58231C5FE5003BC1B8 /* controllerfactory */,
+				A2979A55231C5F77003BC1B8 /* wireframe */,
+			);
+			path = navigation;
+			sourceTree = "<group>";
+		};
+		A2979A55231C5F77003BC1B8 /* wireframe */ = {
+			isa = PBXGroup;
+			children = (
+				A2979A56231C5F8F003BC1B8 /* RootWireframe.swift */,
+			);
+			path = wireframe;
+			sourceTree = "<group>";
+		};
+		A2979A58231C5FE5003BC1B8 /* controllerfactory */ = {
+			isa = PBXGroup;
+			children = (
+				A2979A59231C5FF8003BC1B8 /* ControllerFactory.swift */,
+				A2979A5B231C60F1003BC1B8 /* ControllerFactoryImpl.swift */,
+			);
+			path = controllerfactory;
+			sourceTree = "<group>";
+		};
+		A2979A5D231C61DA003BC1B8 /* router */ = {
+			isa = PBXGroup;
+			children = (
+				A2979A5E231C61E3003BC1B8 /* Router.swift */,
+				A2979A60231C6273003BC1B8 /* RouterImpl.swift */,
+			);
+			path = router;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -477,15 +524,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A2979A5A231C5FF8003BC1B8 /* ControllerFactory.swift in Sources */,
 				A2979A2F231C0098003BC1B8 /* ApiManager.swift in Sources */,
 				A2979A39231C06EF003BC1B8 /* Adress.swift in Sources */,
+				A2979A57231C5F8F003BC1B8 /* RootWireframe.swift in Sources */,
 				A2979A53231C5E76003BC1B8 /* CreatepostViewController.swift in Sources */,
 				A2979A09231BF8EE003BC1B8 /* ViewController.swift in Sources */,
 				A2979A41231C5AFC003BC1B8 /* Post.swift in Sources */,
+				A2979A5C231C60F1003BC1B8 /* ControllerFactoryImpl.swift in Sources */,
+				A2979A61231C6273003BC1B8 /* RouterImpl.swift in Sources */,
 				A2979A3D231C07A7003BC1B8 /* Company.swift in Sources */,
 				A2979A34231C01F1003BC1B8 /* ApiService.swift in Sources */,
 				A2979A07231BF8EE003BC1B8 /* AppDelegate.swift in Sources */,
 				A2979A4E231C5E18003BC1B8 /* UserdetailViewController.swift in Sources */,
+				A2979A5F231C61E3003BC1B8 /* Router.swift in Sources */,
 				A2979A43231C5C60003BC1B8 /* ContentRepository.swift in Sources */,
 				A2979A31231C00B4003BC1B8 /* ApiManagerImpl.swift in Sources */,
 				A2979A49231C5DCA003BC1B8 /* UserlistViewController.swift in Sources */,

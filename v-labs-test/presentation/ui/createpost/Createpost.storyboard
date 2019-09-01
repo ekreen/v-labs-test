@@ -13,7 +13,7 @@
         <!--Createpost View Controller-->
         <scene sceneID="dxP-oE-ZLy">
             <objects>
-                <viewController id="6s0-1b-C9p" customClass="CreatepostViewController" customModule="v_labs_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="CreatepostViewController" id="6s0-1b-C9p" customClass="CreatepostViewController" customModule="v_labs_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yGj-at-AM0">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

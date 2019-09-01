@@ -13,7 +13,7 @@
         <!--Userlist View Controller-->
         <scene sceneID="Y26-AJ-2q6">
             <objects>
-                <viewController id="mZR-ds-sFl" customClass="UserlistViewController" customModule="v_labs_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserlistViewController" id="mZR-ds-sFl" customClass="UserlistViewController" customModule="v_labs_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gRJ-gj-TAj">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

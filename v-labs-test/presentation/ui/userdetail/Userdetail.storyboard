@@ -13,7 +13,7 @@
         <!--Userdetail View Controller-->
         <scene sceneID="bqO-od-44N">
             <objects>
-                <viewController id="QFs-dj-S2O" customClass="UserdetailViewController" customModule="v_labs_test" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="UserdetailViewController" id="QFs-dj-S2O" customClass="UserdetailViewController" customModule="v_labs_test" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="sGz-0C-6oz">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
