@@ -39,7 +39,7 @@ class UserlistViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        wireframe.showDetail(for: userList[indexPath.row])
+        wireframe.showUserDetail(for: userList[indexPath.row])
     }
 
 }

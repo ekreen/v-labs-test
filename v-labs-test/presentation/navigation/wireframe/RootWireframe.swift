@@ -27,11 +27,17 @@ class RootWireframe {
         window.rootViewController = router.rootController
     }
     
-    func showDetail(for user: User) {
+    func showUserDetail(for user: User) {
         let controller = appDependencies.controllerFactory.makeUserdetailViewController() as! UserdetailViewController
         controller.wireframe = self
         controller.viewModel = UserdetailViewModel(contentRepository: appDependencies.contentRepository, user: user)
         router.pushViewController(controller: controller)
     }
+    
+    func showAlbumDetail(for album: Album) {
+        
+    }
+    
+    
     
 }
