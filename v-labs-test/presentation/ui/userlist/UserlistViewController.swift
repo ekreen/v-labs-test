@@ -34,7 +34,6 @@ class UserlistViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.userListCell.identifier, for: indexPath)
 
         cell.textLabel?.text = userList[indexPath.row].name
-
         return cell
     }
     

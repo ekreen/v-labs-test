@@ -13,23 +13,24 @@ enum ApiService {
     case albums(userId: Int)
     case posts(userId: Int)
     case photos(albumId: Int)
+    case createPost(post: Post)
 }
 
 extension ApiService: TargetType {
     var baseURL: URL {
-        return URL(string: "https://jsonplaceholder.typicode.com")!
+        return ApiServiceValues.baseUrl
     }
     
     var path: String {
         switch self {
         case .users:
-            return "/users"
+            return ApiServiceValues.usersRoute
         case .albums:
-            return "/albums"
-        case .posts:
-            return "/posts"
+            return ApiServiceValues.albumsRoute
+        case .posts, .createPost:
+            return ApiServiceValues.postsRoute
         case .photos:
-            return "/photos"
+            return ApiServiceValues.photosRoute
         }
     }
     
@@ -37,6 +38,8 @@ extension ApiService: TargetType {
         switch self {
         case .users, .albums, .posts, .photos:
             return .get
+        case .createPost:
+            return .post
         }
     }
     
@@ -52,6 +55,8 @@ extension ApiService: TargetType {
             return .requestParameters(parameters: ["userId": id], encoding: URLEncoding.queryString)
         case .photos(let id):
             return .requestParameters(parameters: ["albumId": id], encoding: URLEncoding.queryString)
+        case .createPost(let post):
+            return .requestJSONEncodable(post)
         }
     }
     

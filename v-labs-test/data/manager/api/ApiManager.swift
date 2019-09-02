@@ -13,4 +13,5 @@ protocol ApiManager {
     func getAlbums(for userId: Int) -> Single<[Album]>
     func getPosts(for userId: Int) -> Single<[Post]>
     func getPhotos(for albumId: Int) -> Single<[PhotoAlbum]>
+    func createPost(with post: Post) -> Completable
 }

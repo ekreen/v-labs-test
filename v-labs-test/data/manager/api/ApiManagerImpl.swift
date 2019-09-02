@@ -31,4 +31,9 @@ class ApiManagerImpl: ApiManager {
         return provider.rx.request(.photos(albumId: albumId))
         .map([PhotoAlbum].self)
     }
+    
+    func createPost(with post: Post) -> Completable {
+        return provider.rx.request(.createPost(post: post))
+        .asCompletable()
+    }
 }
