@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		7A85EB435BD7CB14D904A9A0 /* Pods_v_labs_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91999EF00A281A5EDEF6C269 /* Pods_v_labs_test.framework */; };
+		8043D3A3231D280F0012C3F3 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043D3A2231D280F0012C3F3 /* AppDependencies.swift */; };
+		8043D3A6231D2DC20012C3F3 /* AlbumdetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043D3A5231D2DC20012C3F3 /* AlbumdetailViewController.swift */; };
+		8043D3A8231D2DD10012C3F3 /* Albumdetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8043D3A7231D2DD10012C3F3 /* Albumdetail.storyboard */; };
 		A2979A07231BF8EE003BC1B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A06231BF8EE003BC1B8 /* AppDelegate.swift */; };
 		A2979A0E231BF8EF003BC1B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2979A0D231BF8EF003BC1B8 /* Assets.xcassets */; };
 		A2979A11231BF8EF003BC1B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2979A0F231BF8EF003BC1B8 /* LaunchScreen.storyboard */; };
@@ -54,6 +57,9 @@
 /* Begin PBXFileReference section */
 		07C5C9C4BDAB40E26DB0DAA5 /* Pods-v-labs-testTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-v-labs-testTests.debug.xcconfig"; path = "Target Support Files/Pods-v-labs-testTests/Pods-v-labs-testTests.debug.xcconfig"; sourceTree = "<group>"; };
 		6C5959E1A106F5AE02AAAF97 /* Pods-v-labs-testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-v-labs-testTests.release.xcconfig"; path = "Target Support Files/Pods-v-labs-testTests/Pods-v-labs-testTests.release.xcconfig"; sourceTree = "<group>"; };
+		8043D3A2231D280F0012C3F3 /* AppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
+		8043D3A5231D2DC20012C3F3 /* AlbumdetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumdetailViewController.swift; sourceTree = "<group>"; };
+		8043D3A7231D2DD10012C3F3 /* Albumdetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Albumdetail.storyboard; sourceTree = "<group>"; };
 		91999EF00A281A5EDEF6C269 /* Pods_v_labs_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_v_labs_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A1BACFFF47FF8EFEFE7A2D1 /* Pods-v-labs-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-v-labs-test.debug.xcconfig"; path = "Target Support Files/Pods-v-labs-test/Pods-v-labs-test.debug.xcconfig"; sourceTree = "<group>"; };
 		A2979A03231BF8EE003BC1B8 /* v-labs-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "v-labs-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -134,6 +140,23 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		8043D3A1231D27A00012C3F3 /* di */ = {
+			isa = PBXGroup;
+			children = (
+				8043D3A2231D280F0012C3F3 /* AppDependencies.swift */,
+			);
+			path = di;
+			sourceTree = "<group>";
+		};
+		8043D3A4231D2D580012C3F3 /* albumdetail */ = {
+			isa = PBXGroup;
+			children = (
+				8043D3A5231D2DC20012C3F3 /* AlbumdetailViewController.swift */,
+				8043D3A7231D2DD10012C3F3 /* Albumdetail.storyboard */,
+			);
+			path = albumdetail;
+			sourceTree = "<group>";
+		};
 		A29799FA231BF8EE003BC1B8 = {
 			isa = PBXGroup;
 			children = (
@@ -158,6 +181,7 @@
 		A2979A05231BF8EE003BC1B8 /* v-labs-test */ = {
 			isa = PBXGroup;
 			children = (
+				8043D3A1231D27A00012C3F3 /* di */,
 				A2979A2A231C0063003BC1B8 /* presentation */,
 				A2979A29231C005C003BC1B8 /* data */,
 				A2979A06231BF8EE003BC1B8 /* AppDelegate.swift */,
@@ -246,6 +270,7 @@
 		A2979A44231C5D74003BC1B8 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				8043D3A4231D2D580012C3F3 /* albumdetail */,
 				A2979A4F231C5E50003BC1B8 /* createpost */,
 				A2979A4A231C5DEC003BC1B8 /* userdetail */,
 				A2979A45231C5D7C003BC1B8 /* userlist */,
@@ -417,6 +442,7 @@
 				A2979A51231C5E65003BC1B8 /* Createpost.storyboard in Resources */,
 				A2979A4C231C5E04003BC1B8 /* Userdetail.storyboard in Resources */,
 				A2979A11231BF8EF003BC1B8 /* LaunchScreen.storyboard in Resources */,
+				8043D3A8231D2DD10012C3F3 /* Albumdetail.storyboard in Resources */,
 				A2979A47231C5DB2003BC1B8 /* Userlist.storyboard in Resources */,
 				A2979A0E231BF8EF003BC1B8 /* Assets.xcassets in Resources */,
 			);
@@ -558,7 +584,9 @@
 				A2979A43231C5C60003BC1B8 /* ContentRepository.swift in Sources */,
 				A2979A31231C00B4003BC1B8 /* ApiManagerImpl.swift in Sources */,
 				A2979A28231BFFAC003BC1B8 /* R.generated.swift in Sources */,
+				8043D3A3231D280F0012C3F3 /* AppDependencies.swift in Sources */,
 				A2979A3F231C573D003BC1B8 /* Album.swift in Sources */,
+				8043D3A6231D2DC20012C3F3 /* AlbumdetailViewController.swift in Sources */,
 				A2979A37231C05D3003BC1B8 /* User.swift in Sources */,
 				A2979A3B231C073C003BC1B8 /* Geo.swift in Sources */,
 			);

@@ -12,14 +12,12 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var wireframe: RootWireframe?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
-//        let appDependencies = AppDependencies()
         window = UIWindow(frame: UIScreen.main.bounds)
-        let wireframe = RootWireframe(window: window!)
-        wireframe.start()
+        wireframe = RootWireframe(window: window!, appDependencies: AppDependenciesImpl())
+        wireframe!.start()
         window?.makeKeyAndVisible()
         return true
     }
