@@ -89,7 +89,7 @@ private extension UserdetailViewController {
     func setupUI() {
         navigationController?.navigationBar.prefersLargeTitles = true
         title = viewModel.user.username
-        
+        prepareNavigationBar()
         loadDatas()
     }
     
@@ -105,6 +105,16 @@ private extension UserdetailViewController {
                 strongSelf.tableView.reloadData()
             })
             .disposed(by: disposeBag)
+    }
+    
+    func prepareNavigationBar() {
+        navigationController?.navigationBar.prefersLargeTitles = true
+        navigationItem.rightBarButtonItem = UIBarButtonItem(barButtonSystemItem: .add, target: self, action: #selector (addPost))
+    }
+    
+    @objc
+    func addPost() {
+        wireframe.showPostform(for: viewModel.user)
     }
     
 }

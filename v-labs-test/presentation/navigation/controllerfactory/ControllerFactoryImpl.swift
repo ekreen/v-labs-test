@@ -21,7 +21,7 @@ class ControllerFactoryImpl: ControllerFactory {
         return R.storyboard.userdetail().instantiateViewController(withIdentifier: R.storyboard.userdetail.userdetailViewController.identifier)
     }
     
-    func makeCreatepostViewController() -> UIViewController {
-        return R.storyboard.createpost().instantiateViewController(withIdentifier: R.storyboard.createpost.createpostViewController.identifier)
+    func makePostformViewController() -> UIViewController {
+        return PostformViewController()
     }
 }

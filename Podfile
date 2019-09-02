@@ -12,6 +12,7 @@ target 'v-labs-test' do
   pod 'Kingfisher', '~> 5.0'
   pod 'R.swift'
   pod 'Swinject'
+  pod 'Eureka'
 
   target 'v-labs-testTests' do
     inherit! :search_paths

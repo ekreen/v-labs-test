@@ -53,7 +53,6 @@ extension AlbumdetailViewController: UICollectionViewDelegateFlowLayout {
 private extension AlbumdetailViewController {
     
     func setupUI() {
-        navigationController?.navigationBar.prefersLargeTitles = true
         title = viewModel.album.title
         collectionView.register(R.nib.photoCollectionViewCell)
         collectionView.delegate = self
@@ -68,6 +67,5 @@ private extension AlbumdetailViewController {
                 strongSelf.collectionView.reloadData()
             })
         .disposed(by: disposeBag)
-    }
-    
+    }    
 }

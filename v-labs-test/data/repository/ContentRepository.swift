@@ -30,4 +30,8 @@ class ContentRepository {
     func getPhotos(for albumId: Int) -> Single<[PhotoAlbum]> {
         return apiManager.getPhotos(for: albumId)
     }
+    
+    func createPost(with post: Post) -> Completable {
+        return apiManager.createPost(with: post)
+    }
 }

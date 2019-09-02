@@ -13,6 +13,8 @@
 		A223BE9E231D9893008AE74F /* AlbumdetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223BE9D231D9893008AE74F /* AlbumdetailViewController.swift */; };
 		A223BEA0231D99B0008AE74F /* AlbumdetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223BE9F231D99B0008AE74F /* AlbumdetailViewModel.swift */; };
 		A223BEA2231D9ADE008AE74F /* PhotoAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223BEA1231D9ADE008AE74F /* PhotoAlbum.swift */; };
+		A262E49C231DC24300F83550 /* PostformViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A262E49B231DC24300F83550 /* PostformViewController.swift */; };
+		A262E49E231DC5F100F83550 /* PostformViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A262E49D231DC5F100F83550 /* PostformViewModel.swift */; };
 		A2979A07231BF8EE003BC1B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A06231BF8EE003BC1B8 /* AppDelegate.swift */; };
 		A2979A0E231BF8EF003BC1B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2979A0D231BF8EF003BC1B8 /* Assets.xcassets */; };
 		A2979A11231BF8EF003BC1B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2979A0F231BF8EF003BC1B8 /* LaunchScreen.storyboard */; };
@@ -30,8 +32,6 @@
 		A2979A43231C5C60003BC1B8 /* ContentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A42231C5C60003BC1B8 /* ContentRepository.swift */; };
 		A2979A47231C5DB2003BC1B8 /* Userlist.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2979A46231C5DB2003BC1B8 /* Userlist.storyboard */; };
 		A2979A4C231C5E04003BC1B8 /* Userdetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2979A4B231C5E04003BC1B8 /* Userdetail.storyboard */; };
-		A2979A51231C5E65003BC1B8 /* Createpost.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2979A50231C5E65003BC1B8 /* Createpost.storyboard */; };
-		A2979A53231C5E76003BC1B8 /* CreatepostViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A52231C5E76003BC1B8 /* CreatepostViewController.swift */; };
 		A2979A57231C5F8F003BC1B8 /* RootWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A56231C5F8F003BC1B8 /* RootWireframe.swift */; };
 		A2979A5A231C5FF8003BC1B8 /* ControllerFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A59231C5FF8003BC1B8 /* ControllerFactory.swift */; };
 		A2979A5C231C60F1003BC1B8 /* ControllerFactoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A5B231C60F1003BC1B8 /* ControllerFactoryImpl.swift */; };
@@ -68,6 +68,8 @@
 		A223BE9D231D9893008AE74F /* AlbumdetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumdetailViewController.swift; sourceTree = "<group>"; };
 		A223BE9F231D99B0008AE74F /* AlbumdetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumdetailViewModel.swift; sourceTree = "<group>"; };
 		A223BEA1231D9ADE008AE74F /* PhotoAlbum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoAlbum.swift; sourceTree = "<group>"; };
+		A262E49B231DC24300F83550 /* PostformViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostformViewController.swift; sourceTree = "<group>"; };
+		A262E49D231DC5F100F83550 /* PostformViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostformViewModel.swift; sourceTree = "<group>"; };
 		A2979A03231BF8EE003BC1B8 /* v-labs-test.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "v-labs-test.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		A2979A06231BF8EE003BC1B8 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A2979A0D231BF8EF003BC1B8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -89,8 +91,6 @@
 		A2979A42231C5C60003BC1B8 /* ContentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentRepository.swift; sourceTree = "<group>"; };
 		A2979A46231C5DB2003BC1B8 /* Userlist.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Userlist.storyboard; sourceTree = "<group>"; };
 		A2979A4B231C5E04003BC1B8 /* Userdetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Userdetail.storyboard; sourceTree = "<group>"; };
-		A2979A50231C5E65003BC1B8 /* Createpost.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Createpost.storyboard; sourceTree = "<group>"; };
-		A2979A52231C5E76003BC1B8 /* CreatepostViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatepostViewController.swift; sourceTree = "<group>"; };
 		A2979A56231C5F8F003BC1B8 /* RootWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootWireframe.swift; sourceTree = "<group>"; };
 		A2979A59231C5FF8003BC1B8 /* ControllerFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactory.swift; sourceTree = "<group>"; };
 		A2979A5B231C60F1003BC1B8 /* ControllerFactoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ControllerFactoryImpl.swift; sourceTree = "<group>"; };
@@ -174,6 +174,15 @@
 				A2B93DE6231DB44F00D8071C /* PhotoCollectionViewCell.xib */,
 			);
 			path = cells;
+			sourceTree = "<group>";
+		};
+		A262E49A231DC22800F83550 /* postform */ = {
+			isa = PBXGroup;
+			children = (
+				A262E49B231DC24300F83550 /* PostformViewController.swift */,
+				A262E49D231DC5F100F83550 /* PostformViewModel.swift */,
+			);
+			path = postform;
 			sourceTree = "<group>";
 		};
 		A29799FA231BF8EE003BC1B8 = {
@@ -291,8 +300,8 @@
 		A2979A44231C5D74003BC1B8 /* ui */ = {
 			isa = PBXGroup;
 			children = (
+				A262E49A231DC22800F83550 /* postform */,
 				8043D3A4231D2D580012C3F3 /* albumdetail */,
-				A2979A4F231C5E50003BC1B8 /* createpost */,
 				A2979A4A231C5DEC003BC1B8 /* userdetail */,
 				A2979A45231C5D7C003BC1B8 /* userlist */,
 			);
@@ -318,15 +327,6 @@
 				A2979A68231D89F1003BC1B8 /* UserdetailViewController.swift */,
 			);
 			path = userdetail;
-			sourceTree = "<group>";
-		};
-		A2979A4F231C5E50003BC1B8 /* createpost */ = {
-			isa = PBXGroup;
-			children = (
-				A2979A50231C5E65003BC1B8 /* Createpost.storyboard */,
-				A2979A52231C5E76003BC1B8 /* CreatepostViewController.swift */,
-			);
-			path = createpost;
 			sourceTree = "<group>";
 		};
 		A2979A54231C5F6F003BC1B8 /* navigation */ = {
@@ -467,7 +467,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2979A51231C5E65003BC1B8 /* Createpost.storyboard in Resources */,
 				A2979A4C231C5E04003BC1B8 /* Userdetail.storyboard in Resources */,
 				A2979A11231BF8EF003BC1B8 /* LaunchScreen.storyboard in Resources */,
 				8043D3A8231D2DD10012C3F3 /* Albumdetail.storyboard in Resources */,
@@ -596,18 +595,19 @@
 				A2979A2F231C0098003BC1B8 /* ApiManager.swift in Sources */,
 				A2979A65231C684E003BC1B8 /* UserlistViewController.swift in Sources */,
 				A2979A39231C06EF003BC1B8 /* Adress.swift in Sources */,
+				A262E49E231DC5F100F83550 /* PostformViewModel.swift in Sources */,
 				A2979A63231C65F7003BC1B8 /* UserlistViewModel.swift in Sources */,
 				A2979A69231D89F1003BC1B8 /* UserdetailViewController.swift in Sources */,
 				A2979A57231C5F8F003BC1B8 /* RootWireframe.swift in Sources */,
 				A2979A67231C6BE5003BC1B8 /* UserdetailViewModel.swift in Sources */,
 				A2B93DEB231DBE4400D8071C /* ApiServiceValues.swift in Sources */,
-				A2979A53231C5E76003BC1B8 /* CreatepostViewController.swift in Sources */,
 				A223BE9E231D9893008AE74F /* AlbumdetailViewController.swift in Sources */,
 				A2979A41231C5AFC003BC1B8 /* Post.swift in Sources */,
 				A2979A5C231C60F1003BC1B8 /* ControllerFactoryImpl.swift in Sources */,
 				A2979A61231C6273003BC1B8 /* RouterImpl.swift in Sources */,
 				A2979A6C231D8CB4003BC1B8 /* UserinfoTableViewCell.swift in Sources */,
 				A223BEA2231D9ADE008AE74F /* PhotoAlbum.swift in Sources */,
+				A262E49C231DC24300F83550 /* PostformViewController.swift in Sources */,
 				A2979A3D231C07A7003BC1B8 /* Company.swift in Sources */,
 				A2979A34231C01F1003BC1B8 /* ApiService.swift in Sources */,
 				A2979A07231BF8EE003BC1B8 /* AppDelegate.swift in Sources */,

@@ -14,4 +14,5 @@ protocol Router {
     func setRootController(controller: UIViewController)
     func pushViewController(controller: UIViewController)
     func popViewController()
+    func present(controller: UIViewController)
 }

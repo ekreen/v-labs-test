@@ -9,6 +9,7 @@
 import UIKit
 
 class RouterImpl: Router {
+    
     var rootController: UINavigationController
     
     init(rootController: UINavigationController = UINavigationController()) {
@@ -25,5 +26,9 @@ class RouterImpl: Router {
     
     func popViewController() {
         rootController.popViewController(animated: true)
+    }
+    
+    func present(controller: UIViewController) {
+        rootController.present(controller, animated: true)
     }
 }

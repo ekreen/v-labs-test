@@ -11,6 +11,6 @@ import UIKit
 protocol ControllerFactory {
     func makeUserlistViewController() -> UIViewController
     func makeUserdetailViewController() -> UIViewController
-    func makeCreatepostViewController() -> UIViewController
+    func makePostformViewController() -> UIViewController
     func makeAlbumdetailViewController() -> UIViewController
 }

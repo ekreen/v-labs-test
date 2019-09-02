@@ -41,6 +41,11 @@ class RootWireframe {
         router.pushViewController(controller: controller)
     }
     
-    
+    func showPostform(for user: User) {
+        let controller = appDependencies.controllerFactory.makePostformViewController() as! PostformViewController
+        controller.wireframe = self
+        controller.viewModel = PostformViewModel(contentRepository: appDependencies.contentRepository, user: user)
+        router.present(controller: controller)
+    }
     
 }
