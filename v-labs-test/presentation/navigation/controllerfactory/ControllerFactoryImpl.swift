@@ -9,6 +9,10 @@
 import UIKit
 
 class ControllerFactoryImpl: ControllerFactory {
+    func makeAlbumdetailViewController() -> UIViewController {
+        return R.storyboard.albumdetail().instantiateViewController(withIdentifier: R.storyboard.albumdetail.albumdetailViewController.identifier)
+    }
+    
     func makeUserlistViewController() -> UIViewController {
         return R.storyboard.userlist().instantiateViewController(withIdentifier: R.storyboard.userlist.userlistViewController.identifier)
     }

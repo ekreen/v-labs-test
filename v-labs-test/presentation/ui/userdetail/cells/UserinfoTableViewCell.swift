@@ -32,9 +32,9 @@ class UserinfoTableViewCell: UITableViewCell {
 extension UserinfoTableViewCell {
     func populate(with user: User) {
         nameLabel.text = user.name
-        companyLabel.text = user.company.name
-        emailLabel.text = user.email
-        phoneLabel.text = user.phone
-        websiteLabel.text = user.website
+        companyLabel.text = "💼 \(user.company.name)"
+        emailLabel.text = "📧 \(user.email)"
+        phoneLabel.text = "☎ \(user.phone)"
+        websiteLabel.text = "💻 \(user.website)"
     }
 }

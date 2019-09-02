@@ -12,4 +12,5 @@ protocol ApiManager {
     func getUsers() -> Single<[User]>
     func getAlbums(for userId: Int) -> Single<[Album]>
     func getPosts(for userId: Int) -> Single<[Post]>
+    func getPhotos(for albumId: Int) -> Single<[PhotoAlbum]>
 }

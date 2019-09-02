@@ -35,7 +35,10 @@ class RootWireframe {
     }
     
     func showAlbumDetail(for album: Album) {
-        
+        let controller = appDependencies.controllerFactory.makeAlbumdetailViewController() as! AlbumdetailViewController
+        controller.wireframe = self
+        controller.viewModel = AlbumdetailViewModel(contentRepository: appDependencies.contentRepository, album: album)
+        router.pushViewController(controller: controller)
     }
     
     

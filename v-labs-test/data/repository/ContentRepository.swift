@@ -26,4 +26,8 @@ class ContentRepository {
     func getPosts(for userId: Int) -> Single<[Post]> {
         return apiManager.getPosts(for: userId)
     }
+    
+    func getPhotos(for albumId: Int) -> Single<[PhotoAlbum]> {
+        return apiManager.getPhotos(for: albumId)
+    }
 }

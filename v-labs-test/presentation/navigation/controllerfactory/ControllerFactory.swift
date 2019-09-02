@@ -12,4 +12,5 @@ protocol ControllerFactory {
     func makeUserlistViewController() -> UIViewController
     func makeUserdetailViewController() -> UIViewController
     func makeCreatepostViewController() -> UIViewController
+    func makeAlbumdetailViewController() -> UIViewController
 }

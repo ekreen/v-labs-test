@@ -12,6 +12,7 @@ enum ApiService {
     case users
     case albums(userId: Int)
     case posts(userId: Int)
+    case photos(albumId: Int)
 }
 
 extension ApiService: TargetType {
@@ -27,12 +28,14 @@ extension ApiService: TargetType {
             return "/albums"
         case .posts:
             return "/posts"
+        case .photos:
+            return "/photos"
         }
     }
     
     var method: Method {
         switch self {
-        case .users,.albums, .posts:
+        case .users, .albums, .posts, .photos:
             return .get
         }
     }
@@ -47,6 +50,8 @@ extension ApiService: TargetType {
             return .requestPlain
         case .albums(let id), .posts(let id):
             return .requestParameters(parameters: ["userId": id], encoding: URLEncoding.queryString)
+        case .photos(let id):
+            return .requestParameters(parameters: ["albumId": id], encoding: URLEncoding.queryString)
         }
     }
     

@@ -26,4 +26,9 @@ class ApiManagerImpl: ApiManager {
         return provider.rx.request(.posts(userId: userId))
             .map([Post].self)
     }
+    
+    func getPhotos(for albumId: Int) -> Single<[PhotoAlbum]> {
+        return provider.rx.request(.photos(albumId: albumId))
+        .map([PhotoAlbum].self)
+    }
 }
