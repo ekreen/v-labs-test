@@ -11,30 +11,26 @@ import UIKit
 class RootWireframe {
     private var window: UIWindow
     private var router: Router
-    private var controllerFactory: ControllerFactory
-    private var contentRepository: ContentRepository
-    private var apiManager: ApiManager
+    private var appDependencies: AppDependencies
     
-    init(window: UIWindow) {
+    init(window: UIWindow, appDependencies: AppDependencies) {
         self.window = window
         self.router = RouterImpl()
-        self.controllerFactory = ControllerFactoryImpl()
-        self.apiManager = ApiManagerImpl()
-        self.contentRepository = ContentRepository(apiManager: apiManager)
+        self.appDependencies = appDependencies
     }
 
     func start() {
-        let controller = controllerFactory.makeUserlistViewController() as! UserlistViewController
+        let controller = appDependencies.controllerFactory.makeUserlistViewController() as! UserlistViewController
         controller.wireframe = self
-        controller.viewModel = UserlistViewModel(contentRepository: contentRepository)
+        controller.viewModel = UserlistViewModel(contentRepository: appDependencies.contentRepository)
         router.setRootController(controller: controller)
         window.rootViewController = router.rootController
     }
     
     func showDetail(for user: User) {
-        let controller = controllerFactory.makeUserdetailViewController() as! UserdetailViewController
+        let controller = appDependencies.controllerFactory.makeUserdetailViewController() as! UserdetailViewController
         controller.wireframe = self
-        controller.viewModel = UserdetailViewModel(contentRepository: contentRepository, user: user)
+        controller.viewModel = UserdetailViewModel(contentRepository: appDependencies.contentRepository, user: user)
         router.pushViewController(controller: controller)
     }
     
