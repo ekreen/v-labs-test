@@ -16,6 +16,7 @@ class UserlistViewController: UITableViewController {
     var viewModel: UserlistViewModel!
     private var userList = [User]()
     private let disposeBag = DisposeBag()
+    private let activityIndicator = UIActivityIndicatorView(style: .gray)
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -28,8 +29,8 @@ class UserlistViewController: UITableViewController {
         return userList.count
     }
 
-    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        activityIndicator.stopAnimating()
         let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.userListCell.identifier, for: indexPath)
 
         cell.textLabel?.text = userList[indexPath.row].name
@@ -41,7 +42,6 @@ class UserlistViewController: UITableViewController {
         tableView.deselectRow(at: indexPath, animated: true)
         wireframe.showUserDetail(for: userList[indexPath.row])
     }
-
 }
 
 // MARK: - private functions
@@ -49,6 +49,10 @@ private extension UserlistViewController {
     
     func setupUI() {
         title = "Users"
+        tableView.tableFooterView = UIView(frame: .zero)
+        activityIndicator.hidesWhenStopped = true
+        activityIndicator.startAnimating()
+        tableView.tableHeaderView = activityIndicator
         loadUsers()
     }
     
