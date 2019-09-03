@@ -47,7 +47,7 @@ class UserlistViewController: UITableViewController {
 private extension UserlistViewController {
     
     func setupUI() {
-        title = "Users"
+        title = R.string.localizedString.userlistViewControllerTitle()
         tableView.tableFooterView = UIView(frame: .zero)
         activityIndicator.hidesWhenStopped = true
         activityIndicator.startAnimating()

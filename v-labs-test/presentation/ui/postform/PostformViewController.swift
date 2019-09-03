@@ -28,19 +28,19 @@ class PostformViewController: FormViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        form +++ Section("Add a post")
+        form +++ Section(R.string.localizedString.postformViewControllerSectionTitle())
             <<< TextRow(){ row in
                 row.title = PostRowTag.title.rawValue
                 row.tag = PostRowTag.title.rawValue
-                row.placeholder = "Enter your title here"
+                row.placeholder = R.string.localizedString.postformViewControllerRowTitle()
             }
             <<< TextRow(){ row in
                 row.title = PostRowTag.body.rawValue
                 row.tag = PostRowTag.body.rawValue
-                row.placeholder = "Enter your post here"
+                row.placeholder = R.string.localizedString.postformViewControllerRowBody()
             }
             <<< ButtonRow() { row in
-                row.title = "Validation"
+                row.title = R.string.localizedString.postformViewControllerRowValidationButton()
                 }.onCellSelection({ [weak self] cell, row in
                     guard let strongSelf = self else { return }
                     strongSelf.createPost()
@@ -74,11 +74,11 @@ private extension PostformViewController {
         
         switch style {
         case .success:
-            title = "Succeed"
-            message = "Your post has been send"
+            title = R.string.localizedString.postformViewControllerAlertSucceedTitle()
+            message = R.string.localizedString.postformViewControllerAlertSucceedMessage()
         case .error:
-            title = "Error"
-            message = "Your post can't be send"
+            title = R.string.localizedString.postformViewControllerAlertErrorTitle()
+            message = R.string.localizedString.postformViewControllerAlertErrorMessage()
         }
         
         let alert = UIAlertController(title: title, message: message, preferredStyle: .actionSheet)

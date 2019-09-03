@@ -68,9 +68,9 @@ class UserdetailViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
         switch section {
         case 1:
-            return "Albums"
+            return R.string.localizedString.userdetailViewControllerSectionAlbum()
         case 2:
-            return "Posts"
+            return R.string.localizedString.userdetailViewControllerSectionPosts()
         default:
             return nil
         }

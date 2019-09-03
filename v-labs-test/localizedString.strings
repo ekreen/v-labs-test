@@ -1,0 +1,24 @@
+/* 
+  localizedString.strings
+  v-labs-test
+
+  Created by Kevin ESPRIT on 03/09/2019.
+  Copyright © 2019 Kespri. All rights reserved.
+*/
+
+//UserlistViewController
+"userlistViewController.title"="Users";
+
+//UserdetailViewController
+"userdetailViewController.section.album"="Albums";
+"userdetailViewController.section.posts"="Posts";
+
+//PostformViewController
+"postformViewController.section.title"="Add a post";
+"postformViewController.row.title"="Enter your title here";
+"postformViewController.row.body"="Enter your post here";
+"postformViewController.row.validationButton"="Validation";
+"postformViewController.alert.succeed.title" = "Succeed";
+"postformViewController.alert.succeed.message" = "Your post has been send";
+"postformViewController.alert.error.title" = "Error";
+"postformViewController.alert.error.message" = "Your post can't be send";
