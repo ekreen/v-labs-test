@@ -10,6 +10,9 @@
 		7A85EB435BD7CB14D904A9A0 /* Pods_v_labs_test.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91999EF00A281A5EDEF6C269 /* Pods_v_labs_test.framework */; };
 		8043D3A3231D280F0012C3F3 /* AppDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8043D3A2231D280F0012C3F3 /* AppDependencies.swift */; };
 		8043D3A8231D2DD10012C3F3 /* Albumdetail.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8043D3A7231D2DD10012C3F3 /* Albumdetail.storyboard */; };
+		80EE211A231E517700B6234D /* AlbumViewDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EE2119231E517700B6234D /* AlbumViewDataWrapper.swift */; };
+		80EE211C231E523700B6234D /* PostViewDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EE211B231E523700B6234D /* PostViewDataWrapper.swift */; };
+		80EE211E231E560600B6234D /* UserViewDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EE211D231E560600B6234D /* UserViewDataWrapper.swift */; };
 		A223BE9E231D9893008AE74F /* AlbumdetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223BE9D231D9893008AE74F /* AlbumdetailViewController.swift */; };
 		A223BEA0231D99B0008AE74F /* AlbumdetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223BE9F231D99B0008AE74F /* AlbumdetailViewModel.swift */; };
 		A223BEA2231D9ADE008AE74F /* PhotoAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223BEA1231D9ADE008AE74F /* PhotoAlbum.swift */; };
@@ -63,6 +66,9 @@
 		6C5959E1A106F5AE02AAAF97 /* Pods-v-labs-testTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-v-labs-testTests.release.xcconfig"; path = "Target Support Files/Pods-v-labs-testTests/Pods-v-labs-testTests.release.xcconfig"; sourceTree = "<group>"; };
 		8043D3A2231D280F0012C3F3 /* AppDependencies.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDependencies.swift; sourceTree = "<group>"; };
 		8043D3A7231D2DD10012C3F3 /* Albumdetail.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Albumdetail.storyboard; sourceTree = "<group>"; };
+		80EE2119231E517700B6234D /* AlbumViewDataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewDataWrapper.swift; sourceTree = "<group>"; };
+		80EE211B231E523700B6234D /* PostViewDataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewDataWrapper.swift; sourceTree = "<group>"; };
+		80EE211D231E560600B6234D /* UserViewDataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewDataWrapper.swift; sourceTree = "<group>"; };
 		91999EF00A281A5EDEF6C269 /* Pods_v_labs_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_v_labs_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A1BACFFF47FF8EFEFE7A2D1 /* Pods-v-labs-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-v-labs-test.debug.xcconfig"; path = "Target Support Files/Pods-v-labs-test/Pods-v-labs-test.debug.xcconfig"; sourceTree = "<group>"; };
 		A223BE9D231D9893008AE74F /* AlbumdetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumdetailViewController.swift; sourceTree = "<group>"; };
@@ -167,6 +173,16 @@
 			path = albumdetail;
 			sourceTree = "<group>";
 		};
+		80EE2118231E513400B6234D /* data-formatter */ = {
+			isa = PBXGroup;
+			children = (
+				80EE2119231E517700B6234D /* AlbumViewDataWrapper.swift */,
+				80EE211B231E523700B6234D /* PostViewDataWrapper.swift */,
+				80EE211D231E560600B6234D /* UserViewDataWrapper.swift */,
+			);
+			path = "data-formatter";
+			sourceTree = "<group>";
+		};
 		A223BEA3231DAD41008AE74F /* cells */ = {
 			isa = PBXGroup;
 			children = (
@@ -243,6 +259,7 @@
 		A2979A2A231C0063003BC1B8 /* presentation */ = {
 			isa = PBXGroup;
 			children = (
+				80EE2118231E513400B6234D /* data-formatter */,
 				A2979A54231C5F6F003BC1B8 /* navigation */,
 				A2979A44231C5D74003BC1B8 /* ui */,
 			);
@@ -595,6 +612,7 @@
 				A2979A2F231C0098003BC1B8 /* ApiManager.swift in Sources */,
 				A2979A65231C684E003BC1B8 /* UserlistViewController.swift in Sources */,
 				A2979A39231C06EF003BC1B8 /* Adress.swift in Sources */,
+				80EE211A231E517700B6234D /* AlbumViewDataWrapper.swift in Sources */,
 				A262E49E231DC5F100F83550 /* PostformViewModel.swift in Sources */,
 				A2979A63231C65F7003BC1B8 /* UserlistViewModel.swift in Sources */,
 				A2979A69231D89F1003BC1B8 /* UserdetailViewController.swift in Sources */,
@@ -603,9 +621,11 @@
 				A2B93DEB231DBE4400D8071C /* ApiServiceValues.swift in Sources */,
 				A223BE9E231D9893008AE74F /* AlbumdetailViewController.swift in Sources */,
 				A2979A41231C5AFC003BC1B8 /* Post.swift in Sources */,
+				80EE211E231E560600B6234D /* UserViewDataWrapper.swift in Sources */,
 				A2979A5C231C60F1003BC1B8 /* ControllerFactoryImpl.swift in Sources */,
 				A2979A61231C6273003BC1B8 /* RouterImpl.swift in Sources */,
 				A2979A6C231D8CB4003BC1B8 /* UserinfoTableViewCell.swift in Sources */,
+				80EE211C231E523700B6234D /* PostViewDataWrapper.swift in Sources */,
 				A223BEA2231D9ADE008AE74F /* PhotoAlbum.swift in Sources */,
 				A262E49C231DC24300F83550 /* PostformViewController.swift in Sources */,
 				A2979A3D231C07A7003BC1B8 /* Company.swift in Sources */,

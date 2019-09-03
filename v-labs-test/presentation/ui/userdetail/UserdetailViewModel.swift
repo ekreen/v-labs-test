@@ -18,11 +18,13 @@ class UserdetailViewModel {
         self.user = user
     }
     
-    func albums() -> Single<[Album]> {
+    func albums() -> Single<[AlbumViewDataWrapper]> {
         return contentRepository.getAlbums(for: user.id)
+            .map { $0.map { AlbumViewDataWrapper(album: $0) } }
     }
     
-    func posts() -> Single<[Post]> {
+    func posts() -> Single<[PostViewDataWrapper]> {
         return contentRepository.getPosts(for: user.id)
+            .map { $0.map { PostViewDataWrapper(post: $0) } }
     }
 }

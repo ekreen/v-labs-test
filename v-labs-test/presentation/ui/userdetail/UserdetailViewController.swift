@@ -14,8 +14,8 @@ class UserdetailViewController: UITableViewController {
     // MARK: - Properties
     var wireframe: RootWireframe!
     var viewModel: UserdetailViewModel!
-    private var albums = [Album]()
-    private var posts = [Post]()
+    private var albums = [AlbumViewDataWrapper]()
+    private var posts = [PostViewDataWrapper]()
     private let disposeBag = DisposeBag()
     
     override func viewDidLoad() {
@@ -48,16 +48,16 @@ class UserdetailViewController: UITableViewController {
         switch indexPath.section {
         case 0:
             let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.userInfoCell.identifier, for: indexPath) as! UserinfoTableViewCell
-            cell.populate(with: viewModel.user)
+            cell.populate(with: UserViewDataWrapper(user: viewModel.user))
             cell.selectionStyle = .none
             return cell
         case 1:
             let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.albumCell.identifier, for: indexPath)
-            cell.textLabel?.text = "💽 \(albums[indexPath.row].title)"
+            cell.textLabel?.text = albums[indexPath.row].title
             return cell
         case 2:
             let cell = tableView.dequeueReusableCell(withIdentifier: R.reuseIdentifier.albumCell.identifier, for: indexPath)
-            cell.textLabel?.text = "💬 \(posts[indexPath.row].title)"
+            cell.textLabel?.text = posts[indexPath.row].title
             cell.selectionStyle = .none
             return cell
         default:
@@ -78,7 +78,7 @@ class UserdetailViewController: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
-        wireframe.showAlbumDetail(for: albums[indexPath.row])
+        wireframe.showAlbumDetail(for: albums[indexPath.row].album)
     }
 }
 
