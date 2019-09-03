@@ -13,6 +13,7 @@
 		80EE211A231E517700B6234D /* AlbumViewDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EE2119231E517700B6234D /* AlbumViewDataWrapper.swift */; };
 		80EE211C231E523700B6234D /* PostViewDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EE211B231E523700B6234D /* PostViewDataWrapper.swift */; };
 		80EE211E231E560600B6234D /* UserViewDataWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EE211D231E560600B6234D /* UserViewDataWrapper.swift */; };
+		80EE2120231E61FF00B6234D /* MockApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80EE211F231E61FF00B6234D /* MockApiManager.swift */; };
 		A223BE9E231D9893008AE74F /* AlbumdetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223BE9D231D9893008AE74F /* AlbumdetailViewController.swift */; };
 		A223BEA0231D99B0008AE74F /* AlbumdetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223BE9F231D99B0008AE74F /* AlbumdetailViewModel.swift */; };
 		A223BEA2231D9ADE008AE74F /* PhotoAlbum.swift in Sources */ = {isa = PBXBuildFile; fileRef = A223BEA1231D9ADE008AE74F /* PhotoAlbum.swift */; };
@@ -21,7 +22,7 @@
 		A2979A07231BF8EE003BC1B8 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A06231BF8EE003BC1B8 /* AppDelegate.swift */; };
 		A2979A0E231BF8EF003BC1B8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2979A0D231BF8EF003BC1B8 /* Assets.xcassets */; };
 		A2979A11231BF8EF003BC1B8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A2979A0F231BF8EF003BC1B8 /* LaunchScreen.storyboard */; };
-		A2979A1C231BF8EF003BC1B8 /* v_labs_testTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A1B231BF8EF003BC1B8 /* v_labs_testTests.swift */; };
+		A2979A1C231BF8EF003BC1B8 /* v_labs_testContentRepositoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A1B231BF8EF003BC1B8 /* v_labs_testContentRepositoryTests.swift */; };
 		A2979A28231BFFAC003BC1B8 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A27231BFFAC003BC1B8 /* R.generated.swift */; };
 		A2979A2F231C0098003BC1B8 /* ApiManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A2E231C0098003BC1B8 /* ApiManager.swift */; };
 		A2979A31231C00B4003BC1B8 /* ApiManagerImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2979A30231C00B4003BC1B8 /* ApiManagerImpl.swift */; };
@@ -69,6 +70,7 @@
 		80EE2119231E517700B6234D /* AlbumViewDataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumViewDataWrapper.swift; sourceTree = "<group>"; };
 		80EE211B231E523700B6234D /* PostViewDataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostViewDataWrapper.swift; sourceTree = "<group>"; };
 		80EE211D231E560600B6234D /* UserViewDataWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewDataWrapper.swift; sourceTree = "<group>"; };
+		80EE211F231E61FF00B6234D /* MockApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockApiManager.swift; sourceTree = "<group>"; };
 		91999EF00A281A5EDEF6C269 /* Pods_v_labs_test.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_v_labs_test.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		9A1BACFFF47FF8EFEFE7A2D1 /* Pods-v-labs-test.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-v-labs-test.debug.xcconfig"; path = "Target Support Files/Pods-v-labs-test/Pods-v-labs-test.debug.xcconfig"; sourceTree = "<group>"; };
 		A223BE9D231D9893008AE74F /* AlbumdetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumdetailViewController.swift; sourceTree = "<group>"; };
@@ -82,7 +84,7 @@
 		A2979A10231BF8EF003BC1B8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A2979A12231BF8EF003BC1B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2979A17231BF8EF003BC1B8 /* v-labs-testTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "v-labs-testTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		A2979A1B231BF8EF003BC1B8 /* v_labs_testTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = v_labs_testTests.swift; sourceTree = "<group>"; };
+		A2979A1B231BF8EF003BC1B8 /* v_labs_testContentRepositoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = v_labs_testContentRepositoryTests.swift; sourceTree = "<group>"; };
 		A2979A1D231BF8EF003BC1B8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A2979A27231BFFAC003BC1B8 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = "<group>"; };
 		A2979A2E231C0098003BC1B8 /* ApiManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiManager.swift; sourceTree = "<group>"; };
@@ -239,8 +241,9 @@
 		A2979A1A231BF8EF003BC1B8 /* v-labs-testTests */ = {
 			isa = PBXGroup;
 			children = (
-				A2979A1B231BF8EF003BC1B8 /* v_labs_testTests.swift */,
+				A2979A1B231BF8EF003BC1B8 /* v_labs_testContentRepositoryTests.swift */,
 				A2979A1D231BF8EF003BC1B8 /* Info.plist */,
+				80EE211F231E61FF00B6234D /* MockApiManager.swift */,
 			);
 			path = "v-labs-testTests";
 			sourceTree = "<group>";
@@ -648,7 +651,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A2979A1C231BF8EF003BC1B8 /* v_labs_testTests.swift in Sources */,
+				80EE2120231E61FF00B6234D /* MockApiManager.swift in Sources */,
+				A2979A1C231BF8EF003BC1B8 /* v_labs_testContentRepositoryTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
